@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int Ntes, NUts, NUas, NTugas, hasil;
+    cout<<"Masukan nilai tes: ";
+    cin>>Ntes;
+    cin>>NUts;
+    cin>>NUas;
+    cin>>NTugas;
+    
+    hasil=(0.2*Ntes)+(0.3*NUts)+(0.3*NUas)+(0.2*NTugas);
+    
+    cout<<"Nilai Rata-rata: "<<hasil;
+    
+    if(hasil>80)
+    {
+        cout<<"\nIndeks prestasi anda adalah A";
+    }    
+else if(hasil>=80 && hasil>70)
+{
+    cout<<"\nIndeks prestasi anda adalah B";
+}
+else if(hasil>=70 && hasil>50)
+{
+    cout<<"\nIndeks prestasi anda adalah C";
+}
+else if(hasil<=50)
+{
+    cout<<"\nIndeks prestasi anda adalah D";
+}
+return 0;
+}
